@@ -121,7 +121,7 @@ It reads the following variables:
                                 Default: ``0``
 
 ``EMAIL_BACKEND``               The backend class to use for sending emails.
-                                Available backends are default ``emails.backend.stmp.SMTPBackend`` and ``flask_emails.backend.DummyBackend`` (which do not send anything, useful for testing environments).
+                                Available backends are default ``emails.backend.stmp.SMTPBackend`` and ``flask_emails.backends.DummyBackend`` (which do not send anything, useful for testing environments).
 
                                 Default: ``emails.backend.SMTPBackend``
 
@@ -154,7 +154,7 @@ Notes on testing environment
 
 Use custom email backend for testing environment.
 
-As a starting point, set EMAIL_BACKEND configuration option to ``'flask_emails.backend.DummyBackend'``.
+As a starting point, set EMAIL_BACKEND configuration option to ``'flask_emails.backends.DummyBackend'``.
 
 
 Install
